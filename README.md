@@ -28,9 +28,9 @@ Enable one or more modules, add I18N helper and enable internationalization in y
 ### To secure a symfony form for sf &gt;= 1.2 ###
 Add captcha field in your form class:
 
-    $this-&gt;setWidget(&#039;captcha&#039; =&gt; new wkWidgetCaptcha());
+    $this->setWidget("captcha" => new wkWidgetCaptcha());
 
-    $this-&gt;setValidator(&#039;captcha&#039; =&gt; new wkValidatorCaptcha());
+    $this-&gt;setValidator("captcha" => new wkValidatorCaptcha());
 
 ## Configuration options ##
 These options are default for captcha, you can change any of them, putting in app.yml
@@ -39,16 +39,16 @@ These options are default for captcha, you can change any of them, putting in ap
         wkCaptcha:
             image_width: 160
             image_height: 80
-            image_bg_color: &quot;#fff&quot;
+            image_bg_color: "#fff"
             perturbation: .8
             code_length_min: 4
             code_length_max: 6
             num_lines: 4
             noise_level: 3
-            text_color: &quot;#333&quot;
-            noise_color: &quot;#111&quot;
-            line_color: &quot;#DDD&quot;
+            text_color: "#333"
+            noise_color: "#111"
+            line_color: "#DDD"
 
 
-== Thanks ==
+## Thanks ##
 Thanks Alex Kubyshkin for his work on sfCaptchaGDPlugin. I get idea for writing this from his work.

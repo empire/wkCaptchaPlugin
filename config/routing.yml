@@ -1,0 +1,3 @@
+wk_captcha_image:
+  url:   /captcha-image
+  param: { module: wkCaptchaImage, action: show }
